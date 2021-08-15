@@ -33,6 +33,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 # Runs user authentication
 gem 'devise', '~> 4.8'
+# Runs authorization
+gem 'pundit'
 
 group :development, :test do
   gem 'pry-byebug'
