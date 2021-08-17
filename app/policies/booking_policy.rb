@@ -1,4 +1,8 @@
 class BookingPolicy < ApplicationPolicy
+  def create?
+    user
+  end
+
   def update?
     record.user == user
   end
@@ -10,7 +14,7 @@ class BookingPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
-      # For a multi-tenant SaaS app, you may want to use:
+      # O que vai ser mostrado para os usuários em geral:
       # scope.where(user: user)
     end
   end

@@ -1,9 +1,0 @@
-<% if policy(Booking).create? %>
-  <%= link_to "Nova Reserva", new_booking_path %>
-<% end %>
-
-<% @bookings.each do |booking| %>
-  <% if policy(booking).edit? %>
-    <%= link_to "Update", edit_booking_path(booking) %>
-  <% end %>
-<% end %>
