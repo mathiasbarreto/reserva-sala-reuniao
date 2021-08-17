@@ -31,4 +31,17 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var time = button.data('time')
+    var date = button.data('date') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('#booking-date').text(date)
+    modal.find('#booking-time').text(time)
+    modal.find('#date-input').val(date)
+    modal.find('#time-input').val(time)
+  
+  })
 });

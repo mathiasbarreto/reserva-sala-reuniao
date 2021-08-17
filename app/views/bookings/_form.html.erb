@@ -1,0 +1,29 @@
+<div class="modal fade" id="edit-booking-modal-<%= booking.id %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reservas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <%= form_with(model: booking, method: :patch, remote: true) do %> 
+          <p>Horário da reserva: <%= "#{booking.hour}"%>:00</p>
+          <p>Data da reserva: <%= "#{booking.day}/#{Date.today.month}/#{Date.today.year}" %> </p>
+          <div class="form-group">
+            <%= hidden_field_tag "booking[day]", booking.day, id: "date-input" %>
+            <%= hidden_field_tag "booking[hour]", booking.hour ,id: "time-input" %>
+            <%= label_tag "booking[booking_details]", "Detalhes da reserva: ", class: "col-form-label" %>
+            <%= text_area_tag "booking[booking_details]", booking.booking_details, class: "form-control" %>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <%# <button type="submit">Reservar</button> %>
+        <%= submit_tag "Atualizar", class: "btn btn-primary" %>
+      </div>
+        <% end %>
+    </div>
+  </div>
+</div>

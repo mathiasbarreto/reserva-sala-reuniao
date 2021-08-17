@@ -11,3 +11,21 @@ reservas de uma sala de reunião.
 Protótipo sugerido:
 Entregas:
 - link do sistema publicado no Heroku, para navegarmos na versão final. - link do código no Github.
+
+---------------------------
+TO-DO (features)
+
+
+    - front end 
+    features
+    - deploy heroku
+    - testing feature
+    - CI&CD feature
+    
+
+
+comentar ed
+    scope?
+    1 página só?
+    explicar params para entender melhor como funciona
+    
