@@ -11,10 +11,4 @@ reservas de uma sala de reunião.
 Protótipo sugerido:
 Entregas:
 - link do sistema publicado no Heroku, para navegarmos na versão final. - link do código no Github.
-
----------------------------
-TO-DO (features)
-
-    - CI&CD feature
-
     
