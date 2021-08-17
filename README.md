@@ -18,14 +18,6 @@ TO-DO (features)
 
     - front end 
     features
-    - deploy heroku
-    - testing feature
     - CI&CD feature
-    
 
-
-comentar ed
-    scope?
-    1 página só?
-    explicar params para entender melhor como funciona
     
