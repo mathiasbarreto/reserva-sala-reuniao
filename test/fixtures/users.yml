@@ -1,0 +1,4 @@
+fulano:
+  email: 'fulano@gmail.com'
+  name: 'fulano' 
+  encrypted_password: '123123'
