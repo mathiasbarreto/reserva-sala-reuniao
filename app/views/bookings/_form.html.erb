@@ -8,7 +8,7 @@
         </button>
       </div>
       <div class="modal-body">
-       <%= form_with(model: booking, method: :patch, remote: true) do %> 
+       <%= form_with(model: booking, method: :patch, local: true) do %> 
           <p>Horário da reserva: <%= "#{booking.hour}"%>:00</p>
           <p>Data da reserva: <%= "#{booking.day}/#{Date.today.month}/#{Date.today.year}" %> </p>
           <div class="form-group">
