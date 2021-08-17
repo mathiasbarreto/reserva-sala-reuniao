@@ -15,9 +15,6 @@ Entregas:
 ---------------------------
 TO-DO (features)
 
-
-    - front end 
-    features
     - CI&CD feature
 
     
